@@ -6,8 +6,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-[#101727] text-white py-10 text-center md:text-left">
-      <div className="max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto grid grid-cols-1 md:grid-cols-5 justify-between gap-5 md:gap-8 text-center md:text-left">
+    <footer className="bg-[#101727] text-white py-10 text-center md:text-left">
+      <div className="max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto grid grid-cols-1 md:grid-cols-5 justify-between gap-5 md:gap-14 text-center md:text-left">
         <div>
           <img
             className="w-[180px] mx-auto md:mx-0 mb-4"
@@ -55,7 +55,7 @@ const Footer = () => {
           <h6 className="text-white text-2xl font-semibold mb-3.5">
             Social Links
           </h6>
-          <div className="grid grid-flow-col gap-4">
+          <div className="flex gap-2.5">
             <div className="p-3 bg-white rounded-full hover:cursor-pointer">
               <TbBrandInstagramFilled className="text-black text-xl " />
             </div>
@@ -68,7 +68,27 @@ const Footer = () => {
           </div>
         </nav>
       </div>
-      <div></div>
+
+      <hr className="my-8 w-9/12 mx-auto border-t-2 border-gray-600" />
+
+      <div className="flex justify-between max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
+        <div>
+          <p className="text-gray-300">
+            © 2026 Digitools. All rights reserved.
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <span>
+            <p className="text-gray-300">Privecy Policy</p>
+          </span>
+          <span>
+            <p className="text-gray-300">Terms of Services</p>
+          </span>
+          <span>
+            <p className="text-gray-300">Cookies</p>
+          </span>
+        </div>
+      </div>
     </footer>
   );
 };
