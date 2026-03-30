@@ -1,5 +1,5 @@
 import React from 'react';
-import NavImg from '../src/assets/DigiTools.png';
+import NavImg from '../src/assets/DigiToolsNav.png';
 
 const NavBar = () => {
   return (
