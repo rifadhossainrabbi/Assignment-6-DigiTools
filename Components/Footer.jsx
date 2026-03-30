@@ -69,7 +69,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <hr className="my-8 w-9/12 mx-auto border-t-2 border-gray-600" />
+      <hr className="mb-8 mt-16 w-9/12 mx-auto border-t-2 border-gray-600" />
 
       <div className="flex justify-between max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
         <div>
