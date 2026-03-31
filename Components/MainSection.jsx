@@ -17,7 +17,7 @@ const MainSection = ({ data }) => {
       </div>
 
       {/* Main part */}
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {useData.map((data) => (
           <div className="border border-gray-200 p-5 rounded-3xl hover:transition-all hover:duration-300 hover:shadow-xl hover:ease-in-out hover:-translate-y-2 space-y-3.5">
             <div>
