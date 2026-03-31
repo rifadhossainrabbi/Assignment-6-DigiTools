@@ -1,6 +1,7 @@
 import React from 'react';
 
-const CartProducts = () => {
+const CartProducts = ({ selectedProducts }) => {
+  console.log(selectedProducts, "selectedProducts");
   return (
     <div>
       <h1>Hello Cart</h1>

@@ -1,12 +1,14 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import AllProducts from './AllProducts';
 import CartProducts from './CartProducts';
-
+import { use } from 'react';
 
 const MainSection = ({ data }) => {
   // console.log(useData);
+  const useData = use(data);
 
   const [products, setProducts] = useState('Products');
+  const [selectedProducts, setSelectedProducts] = useState([]);
 
   return (
     <div className="my-34 max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
@@ -35,9 +37,13 @@ const MainSection = ({ data }) => {
 
       {/* Main part */}
       {products === 'Products' ? (
-        <AllProducts data={data} />
+        <AllProducts
+          data={useData}
+          selectedProducts={selectedProducts}
+          setSelectedProducts={setSelectedProducts}
+        />
       ) : (
-        <CartProducts />
+        <CartProducts selectedProducts={selectedProducts} />
       )}
     </div>
   );
