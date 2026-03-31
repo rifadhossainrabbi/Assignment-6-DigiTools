@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content using advanced AI for blogs, ads, and social media.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Unlimited AI writing",
+      "SEO optimization",
+      "Multiple tones",
+      "Grammar correction"
+    ],
+    "icon": "../src/assets/writing_2327400 1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Access thousands of ready-made templates for websites, social media, and branding.",
+    "price": 29.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "5000+ templates",
+      "Editable designs",
+      "Figma & PSD support",
+      "Commercial license"
+    ],
+    "icon": "../src/assets/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Download high-quality images, videos, and graphics for your projects.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Millions of assets",
+      "HD & 4K quality",
+      "Royalty-free",
+      "Unlimited downloads"
+    ],
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZ7MDmDF_ayYV1NbQ_0BdfnzZKE98Hmy6qw&s"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and workflows to save time and increase productivity.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Workflow automation",
+      "Task scheduling",
+      "API integrations",
+      "No-code builder"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/8350/8350353.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with modern templates and ATS-friendly formats.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "PDF export",
+      "Real-time preview"
+    ],
+    "icon": "../src/assets/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Create engaging social media posts, captions, and designs بسهولة.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Post templates",
+      "Caption generator",
+      "Hashtag suggestions",
+      "Multi-platform support"
+    ],
+    "icon": "../src/assets/social-media.png"
+  },
+  {
+    "id": 7,
+    "name": "Website Builder Pro",
+    "description": "Build responsive websites easily with drag-and-drop tools.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Drag & drop builder",
+      "Responsive design",
+      "Free hosting",
+      "Custom domain"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/5234/5234318.png"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Suite",
+    "description": "Create and manage email campaigns with automation and analytics.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Analytics dashboard",
+      "Subscriber management"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/4661/4661478.png"
+  },
+  {
+    "id": 9,
+    "name": "SEO Optimization Tool",
+    "description": "Improve your website ranking with powerful SEO insights and suggestions.",
+    "price": 17.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Keyword analysis",
+      "Site audit",
+      "Competitor tracking",
+      "SEO reports"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/10145/10145789.png"
+  },
+  {
+    "id": 10,
+    "name": "Video Editing Suite",
+    "description": "Edit and create professional videos with easy-to-use tools.",
+    "price": 39.99,
+    "period": "yearly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Drag & drop editor",
+      "Transitions & effects",
+      "4K export",
+      "Audio editing"
+    ],
+    "icon": "https://cdn-icons-png.flaticon.com/512/6979/6979672.png"
+  }
+]
