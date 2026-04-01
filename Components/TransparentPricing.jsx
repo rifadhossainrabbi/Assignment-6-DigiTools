@@ -45,7 +45,9 @@ const TransparentPricing = () => {
               </ul>
             </div>
 
-            <button class="btn btn-primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6">
+            <button
+              type="button"
+              className="btn btn-primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6">
               <span className="text-white">Get Started Free</span>
             </button>
           </div>
@@ -95,7 +97,9 @@ const TransparentPricing = () => {
                 </li>
               </ul>
             </div>
-            <button class="btn btn-primary w-full bg-white border-none rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6">
+            <button
+              type="button"
+              className="btn btn-primary w-full bg-white border-none rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6">
               <span className="bg-gradient-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
                 Start Pro Trial
               </span>

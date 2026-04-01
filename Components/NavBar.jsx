@@ -27,19 +27,19 @@ const NavBar = ({ cart }) => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li>
-                <a href="#">Products</a>
+                <a>Products</a>
               </li>
               <li>
-                <a href="#">Features</a>
+                <a>Features</a>
               </li>
               <li>
-                <a href="#">Pricing</a>
+                <a>Pricing</a>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <a>Testimonials</a>
               </li>
               <li>
-                <a href="#">FAQ</a>
+                <a>FAQ</a>
               </li>
             </ul>
           </div>
@@ -48,19 +48,19 @@ const NavBar = ({ cart }) => {
         <div className="navbar-center hidden lg:flex">
           <ul className="flex space-x-3.5">
             <li className="hover:text-blue-600 hover:underline">
-              <a href="#">Products</a>
+              <a>Products</a>
             </li>
             <li className="hover:text-blue-600 hover:underline">
-              <a href="#">Features</a>
+              <a>Features</a>
             </li>
             <li className="hover:text-blue-600 hover:underline">
-              <a href="#">Pricing</a>
+              <a>Pricing</a>
             </li>
             <li className="hover:text-blue-600 hover:underline">
-              <a href="#">Testimonials</a>
+              <a>Testimonials</a>
             </li>
             <li className="hover:text-blue-600 hover:underline">
-              <a href="#">FAQ</a>
+              <a>FAQ</a>
             </li>
           </ul>
         </div>
@@ -89,10 +89,15 @@ const NavBar = ({ cart }) => {
             </div>
           </div>
 
-          <button className="btn border-0 bg-white text-xl font-semibold shadow-none">
+          <button
+            type="button"
+            className="btn border-0 bg-white text-xl font-semibold shadow-none">
             Log In
           </button>
-          <button class="btn btn-primary bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out">
+
+          <button
+            type="button"
+            className="btn btn-primary bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out">
             Get Started
           </button>
         </div>

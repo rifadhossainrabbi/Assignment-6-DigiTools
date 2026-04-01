@@ -24,11 +24,13 @@ const MainSection = ({ data, selectedProducts, setSelectedProducts }) => {
 
       <div className="w-44 mx-auto p-1 border border-gray-200 rounded-3xl mt-5 mb-7 text-white">
         <button
+          type='button'
           onClick={() => setProducts('Products')}
           className={`px-2 py-1.5 mr-2 ${products === 'Products' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'bg-white text-black'} rounded-3xl hover:cursor-pointer`}>
           Products
         </button>
         <button
+          type='button'
           onClick={() => setProducts('Cart')}
           className={`px-3.5 py-1.5 ${products === 'Cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'bg-white text-black'}  rounded-3xl hover:cursor-pointer`}>
           Cart ({cartLength})

@@ -1,6 +1,7 @@
 import React from 'react';
 import CartCard from './CartCard';
 import { toast } from 'react-toastify';
+import { IoMdCart } from 'react-icons/io';
 
 const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
   console.log(selectedProducts, 'selectedProducts');
@@ -20,12 +21,23 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
     totalPrice += product.price;
   })
 
+     const handleProceedBtn = () => {
+       setSelectedProducts([]);
+       toast.success('All Digital Tools Successfuly Proceed');
+     };
+
+
   return (
     <div>
       <div className="space-y-5">
         {selectedProducts.length === 0 ? (
           <div className="h-[400px] flex items-center justify-center flex-col gap-4">
-            <h2 className="font-bold text-4xl">No Products selected yet</h2>
+            <div>
+              <IoMdCart className="w-20 md:w-32 h-20 md:h-32" />
+            </div>
+            <h2 className="font-bold text-2xl md:text-4xl">
+              No Products selected yet
+            </h2>
             <p>Go to Products tab to select players</p>
           </div>
         ) : (
@@ -52,12 +64,14 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
             </p>
           </div>
 
-          <button className="btn btn-primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out">
+          <button
+            type="button"
+            onClick={() => handleProceedBtn()}
+            className="btn btn-primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out">
             Proceed to Checkout
           </button>
         </>
-      ) : null
-      }
+      ) : null}
     </div>
   );
 };

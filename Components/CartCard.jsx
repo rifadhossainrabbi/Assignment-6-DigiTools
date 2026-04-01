@@ -19,6 +19,7 @@ const CartCard = ({ product, handleDeleteSelectedProducts }) => {
         </div>
       </div>
       <button
+        type='button'
         className="btn text-red-500"
         onClick={() => handleDeleteSelectedProducts(product)}>Remove</button> 
     </div>

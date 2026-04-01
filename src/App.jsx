@@ -12,12 +12,13 @@ import { ToastContainer } from 'react-toastify'
 
 
 const loadData = async () => {
-  const res = await fetch("/public/data.json");
+  const res = await fetch("/data.json");
   return res.json();
 }
+const data = loadData();
 
 function App() {
-  const data = loadData();
+  console.log(data);
   const [selectedProducts, setSelectedProducts] = useState([]);
 
 
@@ -42,13 +43,7 @@ function App() {
       <TransparentPricing />
       <Footer />
 
-      <ToastContainer
-        position="top-right"
-        autoClose={2000}
-        newestOnTop={true}
-        closeOnClick
-        pauseOnHover
-      />
+      <ToastContainer />
     </>
   );
 }

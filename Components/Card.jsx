@@ -45,8 +45,8 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
         <span className="text-3xl font-bold">${data.price}</span>/{data.period}
       </p>
       <div>
-        {data.features.map((list) => (
-          <li className="flex items-center gap-1">
+        {data.features.map((list, ind) => (
+          <li key={ind} className="flex items-center gap-1">
             <img
               className="h-[15px] w-[15px]"
               src={CheckImg}
@@ -59,7 +59,11 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
       <button
         type="button"
         onClick={() => handleBuyNow()}
-        className={`btn btn-primary w-full ${buy ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'bg-green-400 shadow-none border-none'}  rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6`}>
+        className={`btn btn-primary w-full ${
+          buy
+            ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'
+            : 'bg-green-400 shadow-none border-none'
+        } rounded-3xl mt-6`}>
         <span className={`${buy ? 'text-white' : 'text-white font-bold'}`}>
           {buy ? 'Buy Now' : 'Go to Cart'}
         </span>
