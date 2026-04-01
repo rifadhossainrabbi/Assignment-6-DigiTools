@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CheckImg from '../src/assets/Vector.png';
+import { toast } from 'react-toastify';
 
 
-// const handleBuyNow = () => {
-  
-// }
 
-const Card = ({ data, setSelectedProducts, selectedProducts }) => {
+const Card = ({ data, setSelectedProducts, selectedProducts, cart, setCart }) => {
+
+  const handleBuyNow = () => {
+    setbuy(false);
+    toast.success(`${data.name} is Successfuly added to Cart`);
+    setSelectedProducts([...selectedProducts, data]);
+    setCart(selectedProducts.length);
+  }
+
+  const [buy, setbuy] = useState(true);
 
   return (
     <div className="border border-gray-200 p-5 rounded-3xl hover:transition-all hover:duration-300 hover:shadow-xl hover:ease-in-out hover:-translate-y-2 space-y-3.5">
@@ -47,9 +54,12 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
         ))}
       </div>
       <button
-        // onClick={() => handleBuyNow()}
-        class={`btn btn-primary w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6`}>
-        <span className="text-white">Buy Now</span>
+        disabled={!buy}
+        onClick={() => handleBuyNow()}
+        class={`btn btn-primary w-full ${buy ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'bg-gray-300 border-gray-300'}  rounded-3xl transition-transform hover:-translate-y-2 duration-300 ease-in-out mt-6`}>
+        <span className={`${buy ? 'text-white' : 'text-blue-500'}`}>
+          {buy ? "Buy Now" : "Go to Cart"}
+        </span>
       </button>
     </div>
   );

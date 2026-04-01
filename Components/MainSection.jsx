@@ -3,12 +3,13 @@ import AllProducts from './AllProducts';
 import CartProducts from './CartProducts';
 import { use } from 'react';
 
-const MainSection = ({ data }) => {
+const MainSection = ({ data, cart, setCart }) => {
   // console.log(useData);
   const useData = use(data);
 
   const [products, setProducts] = useState('Products');
   const [selectedProducts, setSelectedProducts] = useState([]);
+  const cartLength = selectedProducts.length;
 
   return (
     <div className="my-34 max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
@@ -31,7 +32,7 @@ const MainSection = ({ data }) => {
         <button
           onClick={() => setProducts('Cart')}
           className={`px-3.5 py-1.5 ${products === 'Cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'bg-white text-black'}  rounded-3xl hover:cursor-pointer`}>
-          Cart (0)
+          Cart ({cartLength})
         </button>
       </div>
 
@@ -39,11 +40,17 @@ const MainSection = ({ data }) => {
       {products === 'Products' ? (
         <AllProducts
           data={useData}
+          cart={cart}
+          setCart={setCart}
           selectedProducts={selectedProducts}
           setSelectedProducts={setSelectedProducts}
         />
       ) : (
-        <CartProducts selectedProducts={selectedProducts} />
+        <CartProducts
+          data={data}
+          selectedProducts={selectedProducts}
+          setSelectedProducts={setSelectedProducts}
+        />
       )}
     </div>
   );

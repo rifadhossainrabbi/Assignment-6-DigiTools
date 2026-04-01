@@ -1,7 +1,7 @@
-import React from 'react';
 import NavImg from '../src/assets/DigiToolsNav.png';
 
-const NavBar = () => {
+const NavBar = ({cart, setCart}) => {
+
   return (
     <div className="shadow-sm bg-base-100">
       <div className="navbar max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
@@ -85,7 +85,7 @@ const NavBar = () => {
                 />{' '}
               </svg>
               <span className="badge text-red-500 text-xl font-bold badge-sm indicator-item">
-                8
+                {cart}
               </span>
             </div>
           </div>

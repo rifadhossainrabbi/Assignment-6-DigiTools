@@ -6,8 +6,9 @@ import StartedSection from '../Components/StartedSection'
 import TransparentPricing from '../Components/TransparentPricing'
 import Footer from '../Components/Footer'
 import MainSection from '../Components/MainSection'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import { DiVim } from 'react-icons/di'
+import { ToastContainer } from 'react-toastify'
 
 
 
@@ -18,10 +19,11 @@ function App() {
     return res.json();
   }
   const data = loadData();
+  const [cart, setCart] = useState(0);
 
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart} setCart={setCart} />
       <HeroSection />
       <RatingSection />
       <Suspense
@@ -30,11 +32,13 @@ function App() {
             <span className="text-center loading loading-spinner loading-xl"></span>
           </div>
         }>
-        <MainSection data={data} />
+        <MainSection data={data} setCart={setCart} />
       </Suspense>
       <StartedSection />
       <TransparentPricing />
       <Footer />
+
+      <ToastContainer/>
     </>
   );
 }

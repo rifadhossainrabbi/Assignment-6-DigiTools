@@ -55,7 +55,7 @@ const Footer = () => {
           <h6 className="text-white text-2xl font-semibold mb-3.5">
             Social Links
           </h6>
-          <div className="flex gap-2.5">
+          <div className="flex gap-2.5 justify-center md:justify-start">
             <div className="p-3 bg-white rounded-full hover:cursor-pointer">
               <TbBrandInstagramFilled className="text-black text-xl " />
             </div>
@@ -71,13 +71,13 @@ const Footer = () => {
 
       <hr className="mb-8 mt-16 w-9/12 mx-auto border-t-2 border-gray-600" />
 
-      <div className="flex justify-between max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
+      <div className="flex flex-col md:flex-row md:justify-between justify-center max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
         <div>
           <p className="text-gray-300">
             © 2026 Digitools. All rights reserved.
           </p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 mt-4 md:mt-0 flex-col md:flex-row md:justify-between">
           <span>
             <p className="text-gray-300">Privecy Policy</p>
           </span>
