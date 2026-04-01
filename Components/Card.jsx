@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
 import CheckImg from '../src/assets/Vector.png';
 import { toast } from 'react-toastify';
 
 const Card = ({ data, setSelectedProducts, selectedProducts }) => {
+  const isExist = selectedProducts.find((item) => item.id === data.id);
   const handleBuyNow = () => {
-    const isExist = selectedProducts.find((item) => item.id === data.id);
 
     if (isExist) {
       toast.error(`${data.name} already in Cart`);
       return;
     }
 
-    setbuy(false);
+    // setbuy(false);
     toast.success(`${data.name} is Successfuly add to Cart`);
     setSelectedProducts([...selectedProducts, data]);
   };
 
-  const [buy, setbuy] = useState(true);
+  // const [buy, setbuy] = useState(true);
 
   return (
     <div className="border border-gray-200 p-5 rounded-3xl hover:transition-all hover:duration-300 hover:shadow-xl hover:ease-in-out hover:-translate-y-2 space-y-3.5">
@@ -56,16 +55,17 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
           </li>
         ))}
       </div>
+      {/* buy now a click korle jodi oi card ba data carta jay tokhon isExist true hoy r tokhon e buy now er design change hoy totokkhon porjonto design change hobe na jotokkhon porjonto cart theke oi card ba data remove hoy */}
       <button
         type="button"
         onClick={() => handleBuyNow()}
         className={`btn btn-primary w-full ${
-          buy
-            ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'
-            : 'bg-green-400 shadow-none border-none'
+          isExist
+            ? 'bg-green-400 shadow-none border-none'
+            : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'
         } rounded-3xl mt-6`}>
-        <span className={`${buy ? 'text-white' : 'text-white font-bold'}`}>
-          {buy ? 'Buy Now' : 'Go to Cart'}
+        <span className="text-white font-bold">
+          {isExist ? 'Go to Cart' : 'Buy Now'}
         </span>
       </button>
     </div>
