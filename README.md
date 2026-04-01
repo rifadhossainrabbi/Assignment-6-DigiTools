@@ -1,28 +1,24 @@
-_______Questionsf_________
-Name of your Project
-A little Description
-Technology that you use
-3 Features about your project.
+Questions
+1. Name of your Project
+2. A little Description
+3. Technology that you use
+3. 3 Features about your project.
 
 
 
 
-________________________Answer______________________
-______________Project Name__________________
+Ans:
 1. This Project Name is "DigiTools-Platform"
 
-
-______________Project Description___________
 2. It is a Premium Digital Tools e-commerce website where users can browse and buy products by clicking "Buy Now" button.Users can add products to the cart and also remove them from the cart.
 
-__________________Technology Used_____________________
+
 3. In this project, I used the following technologies:
     .React.js
     .Javascript (Es6)
     .Tailwind CSS
     .DaisyUI
 
- __________________Features about Project_____________
 4. Features:
     * Products and Cart button toggling
 
