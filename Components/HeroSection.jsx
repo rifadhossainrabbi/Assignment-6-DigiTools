@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto flex flex-col-reverse md:flex-row-reverse justify-between items-center gap-[60px]">
         <img
           src={BannerImg}
-          className="w-full max-w-sm md:max-w-md rounded-lg shadow-2xl"
+          className="w-auto md:w-full max-w-sm md:max-w-md rounded-lg shadow-2xl"
         />
 
         <div className="text-center md:text-left lg:text-left">

@@ -8,6 +8,7 @@ import Footer from '../Components/Footer'
 import MainSection from '../Components/MainSection'
 import { Suspense, useState } from 'react'
 import { ToastContainer } from 'react-toastify'
+import TransformWorkflow from '../Components/TransformWorkflow'
 
 
 
@@ -43,6 +44,7 @@ function App() {
       </Suspense>
       <StartedSection />
       <TransparentPricing />
+      <TransformWorkflow/>
       <Footer />
 
       <ToastContainer />

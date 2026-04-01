@@ -5,7 +5,7 @@ const TransparentPricing = () => {
   return (
     <div className="my-36">
       <div>
-        <h1 className="text-center text-5xl font-bold">
+        <h1 className="text-center text-3xl md:text-5xl font-bold">
           Simple, Transparent Pricing
         </h1>
         <p className="text-center text-[#627382] mt-5">

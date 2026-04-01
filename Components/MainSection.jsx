@@ -14,8 +14,8 @@ const MainSection = ({ data, selectedProducts, setSelectedProducts }) => {
     <div className="my-34 max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto">
       {/* Header part */}
       <div className="max-w-11/12 md:max-w-10/12 lg:max-w-9/12 mx-auto text-center">
-        <h1 className="text-5xl font-bold">Premium Digital Tools</h1>
-        <p className="text-xl font-semibold text-gray-500 my-7">
+        <h1 className="text-4xl md:text-5xl font-bold">Premium Digital Tools</h1>
+        <p className=" md:text-xl font-semibold text-gray-500 my-7">
           Choose from our curated collection of premium digital products
           designed <br className="hidden md:block" /> to boost your productivity
           and creativity.
