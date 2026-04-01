@@ -15,6 +15,8 @@ const loadData = async () => {
   const res = await fetch("/data.json");
   return res.json();
 }
+
+// data er loadData() function ta App function er moddhe rakhle ami jokhon buy now te click kori tokhon page scroll up or down hoy tai eita App() er baire rakha hoise
 const data = loadData();
 
 function App() {
