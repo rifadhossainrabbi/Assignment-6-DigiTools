@@ -1,16 +1,46 @@
-# React + Vite
+_______Questionsf_________
+Name of your Project
+A little Description
+Technology that you use
+3 Features about your project.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+________________________Answer______________________
+______________Project Name__________________
+1. This Project Name is "DigiTools-Platform"
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+______________Project Description___________
+2. It is a Premium Digital Tools e-commerce website where users can browse and buy products by clicking "Buy Now" button.Users can add products to the cart and also remove them from the cart.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+__________________Technology Used_____________________
+3. In this project, I used the following technologies:
+    .React.js
+    .Javascript (Es6)
+    .Tailwind CSS
+    .DaisyUI
+
+ __________________Features about Project_____________
+4. Features:
+    * Products and Cart button toggling
+
+    * "Buy Now" buttons Features
+        .Add products to the cart
+        .Change button design after adding
+        .Update cart item count
+        .Calculate total price dynamically
+        .Show toast notifications
+
+    * "Remove" buttons Features.
+        .Remove products from the cart
+        .Update "Buy Now" button design
+        .Update cart item count
+        .Update total price after removal
+        .Show toast notifications
+
+    * "Proceed to CheckOut" buttons Features
+       .Remove all products from the cart
+       .Reset cart count
+       .Show toast notification
