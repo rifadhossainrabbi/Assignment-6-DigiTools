@@ -13,7 +13,9 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
     );
     console.log(filteredProducts, 'filteredProducts');
     setSelectedProducts(filteredProducts);
-    toast.success(`${data.name} is Successfuly Removed from Cart`);
+    console.log(data);
+    console.log(product.name);
+    toast.info(`${product.name} is Successfuly Removed from Cart`);
   };
 
   let totalPrice = 0;
