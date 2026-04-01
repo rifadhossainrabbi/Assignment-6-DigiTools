@@ -12,7 +12,7 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
     }
 
     setbuy(false);
-    toast.success(`${data.name} is Successfuly added to Cart`);
+    toast.success(`${data.name} is Successfuly add to Cart`);
     setSelectedProducts([...selectedProducts, data]);
   };
 
