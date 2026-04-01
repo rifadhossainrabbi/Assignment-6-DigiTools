@@ -2,9 +2,9 @@ import React from 'react';
 
 const CartCard = ({ product, handleDeleteSelectedProducts }) => {
   return (
-    <div className="flex items-center gap-6 justify-between p-10 rounded-2xl bg-[#fafbfc]">
+    <div className="flex items-center gap-6 justify-between p-2.5 md:p-10 rounded-2xl bg-[#fafbfc]">
       <div className="flex items-center gap-6">
-        <div className="p-3 border border-gray-300 inline-block rounded-full bg-[#f5f5f5]">
+        <div className="p-2 md:p-3 border border-gray-300 inline-block rounded-full bg-[#f5f5f5]">
           <img className="h-6 w-6" src={product.icon} alt={product.name} />
         </div>
 

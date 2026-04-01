@@ -60,8 +60,8 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
         <>
           <div className="flex justify-between mt-4 mb-8">
             <p>Total</p>
-            <p className="text-2xl font-bold">
-              <span className="text-2xl font-bold">$</span>
+            <p className="text-xl md:text-2xl font-bold">
+              <span className="text-xl md:text-2xl font-bold">$</span>
               {totalPrice}
             </p>
           </div>
