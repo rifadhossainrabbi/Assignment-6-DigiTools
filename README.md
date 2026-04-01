@@ -14,29 +14,29 @@ Ans:
 
 
 3. In this project, I used the following technologies:
-    .React.js
-    .Javascript (Es6)
-    .Tailwind CSS
-    .DaisyUI
+    i.  React.js
+    ii. Javascript (Es6)
+    iii.Tailwind CSS
+    iv. DaisyUI
 
 4. Features:
     * Products and Cart button toggling
 
     * "Buy Now" buttons Features
-        .Add products to the cart
-        .Change button design after adding
-        .Update cart item count
-        .Calculate total price dynamically
-        .Show toast notifications
+        i.Add products to the cart
+        ii.Change button design after adding
+        iii.Update cart item count
+        iv.Calculate total price dynamically
+        v.Show toast notifications
 
     * "Remove" buttons Features.
-        .Remove products from the cart
-        .Update "Buy Now" button design
-        .Update cart item count
-        .Update total price after removal
-        .Show toast notifications
+        i.Remove products from the cart
+        ii.Update "Buy Now" button design
+        iii.Update cart item count
+        iv.Update total price after removal
+        v.Show toast notifications
 
     * "Proceed to CheckOut" buttons Features
-       .Remove all products from the cart
-       .Reset cart count
-       .Show toast notification
+       i.Remove all products from the cart
+       ii.Reset cart count
+       iii.Show toast notification
