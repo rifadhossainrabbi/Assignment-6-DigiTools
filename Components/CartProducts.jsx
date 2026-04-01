@@ -9,13 +9,13 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
   const handleDeleteSelectedProducts = (product) => {
     console.log(selectedProducts, 'selectedProducts');
     const filteredProducts = selectedProducts.filter(
-      (selectedProduct) => selectedProduct.name !== product.name,
+      (selectedProduct) => selectedProduct.id !== product.id,
     );
     console.log(filteredProducts, 'filteredProducts');
     setSelectedProducts(filteredProducts);
     console.log(data);
     console.log(product.name);
-    toast.info(`${product.name} is Successfuly Removed from Cart`);
+    toast.info(`${product.name} is Successfully Removed from Cart`);
   };
 
   let totalPrice = 0;
@@ -40,7 +40,7 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
             <h2 className="font-bold text-2xl md:text-4xl">
               No Products selected yet
             </h2>
-            <p>Go to Products tab to select players</p>
+            <p>Go to Products tab to select Products</p>
           </div>
         ) : (
           selectedProducts.map((product) => {

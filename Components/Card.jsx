@@ -7,7 +7,7 @@ const Card = ({ data, setSelectedProducts, selectedProducts }) => {
     const isExist = selectedProducts.find((item) => item.id === data.id);
 
     if (isExist) {
-      toast.error(`${data.name} already added to Cart`);
+      toast.error(`${data.name} already in Cart`);
       return;
     }
 
