@@ -3,12 +3,11 @@ import AllProducts from './AllProducts';
 import CartProducts from './CartProducts';
 import { use } from 'react';
 
-const MainSection = ({ data, cart, setCart }) => {
+const MainSection = ({ data, selectedProducts, setSelectedProducts }) => {
   // console.log(useData);
   const useData = use(data);
 
   const [products, setProducts] = useState('Products');
-  const [selectedProducts, setSelectedProducts] = useState([]);
   const cartLength = selectedProducts.length;
 
   return (
@@ -40,8 +39,6 @@ const MainSection = ({ data, cart, setCart }) => {
       {products === 'Products' ? (
         <AllProducts
           data={useData}
-          cart={cart}
-          setCart={setCart}
           selectedProducts={selectedProducts}
           setSelectedProducts={setSelectedProducts}
         />

@@ -2,7 +2,7 @@ import React from 'react';
 import CartCard from './CartCard';
 import { toast } from 'react-toastify';
 
-const CartProducts = ({data, selectedProducts, setSelectedProducts }) => {
+const CartProducts = ({data, selectedProducts, setSelectedProducts}) => {
   console.log(selectedProducts, 'selectedProducts');
 
   const handleDeleteSelectedProducts = (product) => {
@@ -33,6 +33,7 @@ const CartProducts = ({data, selectedProducts, setSelectedProducts }) => {
             return (
               <CartCard
                 key={product.id}
+                selectedProducts={selectedProducts}
                 product={product}
                 handleDeleteSelectedProducts={handleDeleteSelectedProducts}
               />
